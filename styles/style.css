@@ -26,26 +26,41 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50%);
     
-    height: 627px;
+    height: 628px;
     width: 311px;
-    background-image: url(../images/frame-iphone.png);
-    background-repeat: no-repeat;
+    background: url(../images/frame-iphone.png) no-repeat;
 }
 section#redes-sociais {
-    position: relative;
-    top: 10%;
-    left: 70%;
+    text-align: right;
 }
+section#redes-sociais img {
+    margin: 10px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    transition: transform .3s, border 1s;
+}
+iframe#id_tela {
+    position: relative;
+    top: 80px;
+    left: 21px;
+    height: 472px;
+    width: 269px;
+    border-radius: 5px;
+}
+/*  Original
 iframe#id_tela {
     position: relative;
     top: 80px;
     left: 22px;
     height: 472px;
     width: 268px;
+    border-radius: 5px;
 }
-img.icones {
-    margin: 10px;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-}
+*/
